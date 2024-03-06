@@ -1,10 +1,10 @@
 import { createInstance, FeaturevisorInstance } from '@featurevisor/sdk';
 
-const DATAFILE_URL = process.env.NEXT_PUBLIC_FF_URL;
+const DATAFILE_URL = process.env.BUILD_FF_URL;
 
 //let instance: FeaturevisorInstance;
 
-export async function getInstance(): Promise<FeaturevisorInstance> {
+export async function getInstance(): Promise<FeaturevisorInstance> { 
   // if (instance) {
   //   return instance;
   // };
