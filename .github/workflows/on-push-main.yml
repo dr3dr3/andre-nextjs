@@ -32,7 +32,7 @@ jobs:
       repo-prod: ${{ vars.REPO_PROD }}
       repo-gitops: ${{ vars.REPO_GITOPS }}
       build-ff-url: ${{ vars.BUILD_FLAGS_URL }}
-      live-ff-url: ${{ vars.NEXT_PUBLIC_FF_URL }}
+      live-ff-url: ${{ vars.LIVE_FF_URL }}
     permissions:
       contents: write
       pages: write
