@@ -1,6 +1,6 @@
 import { createInstance, FeaturevisorInstance } from '@featurevisor/sdk';
 
-const DATAFILE_URL = 'https://flags.andredreyer.com/datafiles/prod/datafile-tag-build.json';
+// const DATAFILE_URL = process.env.NEXT_PUBLIC_FF_BUILD;
 
 //let instance: FeaturevisorInstance;
 
@@ -10,7 +10,7 @@ export async function getInstance(): Promise<FeaturevisorInstance> {
   // };
 
   const f = createInstance({
-    datafileUrl: DATAFILE_URL,
+    datafileUrl: process.env.NEXT_PUBLIC_FF_BUILD,
     // stickyFeatures: {
     //   exampleDarkLaunch: {
     //       enabled: true

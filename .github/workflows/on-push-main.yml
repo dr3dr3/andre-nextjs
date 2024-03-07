@@ -31,8 +31,6 @@ jobs:
       repo-stage: ${{ vars.REPO_STAGE }}
       repo-prod: ${{ vars.REPO_PROD }}
       repo-gitops: ${{ vars.REPO_GITOPS }}
-      build-ff-url: ${{ vars.BUILD_FLAGS_URL }}
-      live-ff-url: ${{ vars.LIVE_FF_URL }}
     permissions:
       contents: write
       pages: write
