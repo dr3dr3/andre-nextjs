@@ -1,6 +1,6 @@
 import { createInstance, FeaturevisorInstance } from '@featurevisor/sdk';
 
-// const DATAFILE_URL = process.env.NEXT_PUBLIC_FF_BUILD;
+//const DATAFILE_URL = process.env.NEXT_PUBLIC_FF_BUILD;
 
 //let instance: FeaturevisorInstance;
 
