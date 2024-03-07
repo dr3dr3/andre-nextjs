@@ -125,7 +125,7 @@ export async function getLeadTimeToChange() {
 }
 
 export async function getContinuousDeploymentWorkflow() {
-  const ghRepo = process.env.REPO_PROD || '';
+  const ghRepo = process.env.NEXT_PUBLIC_REPO_PROD || '';
   const ghOwner = process.env.GITHUB_REPOSITORY_OWNER || '';
   const repo = ghRepo.replace(/.*?\//, '');
   const ghUrl = `https://api.github.com/repos/${ghOwner}/${repo}/actions/workflows/on-repo-dispatch.yml/runs?per_page=30`;
