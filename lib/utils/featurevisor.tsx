@@ -1,6 +1,6 @@
 import { createInstance, FeaturevisorInstance } from '@featurevisor/sdk';
 
-const DATAFILE_URL = 'https://flags.andredreyer.com/datafiles/live/datafile-tag-all.json';
+const DATAFILE_URL = process.env.BUILD_FF_URL;
 
 //let instance: FeaturevisorInstance;
 
