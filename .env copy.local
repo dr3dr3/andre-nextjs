@@ -1,0 +1,4 @@
+GITHUB_REPOSITORY=dr3dr3/template-nextjs-landing
+GITHUB_REPOSITORY_OWNER=dr3dr3
+REPO_PROD=template-deployment
+NEXT_PUBLIC_FF_URL=https://dr3dr3.github.io/template-featurevisor/datafiles/ci/datafile-tag-all.json

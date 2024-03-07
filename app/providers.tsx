@@ -4,7 +4,7 @@ import { createInstance } from '@featurevisor/sdk';
 import { FeaturevisorProvider } from '@featurevisor/react';
 
 const ff = createInstance({
-  datafileUrl: process.env.LIVE_FLAGS_URL,
+  datafileUrl: 'https://flags.andredreyer.com/datafiles/live/datafile-tag-all.json',
   // stickyFeatures: {
   //     exampleProdTesting: {
   //         enabled: true
