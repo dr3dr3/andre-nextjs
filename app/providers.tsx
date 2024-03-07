@@ -4,7 +4,7 @@ import { createInstance } from '@featurevisor/sdk';
 import { FeaturevisorProvider } from '@featurevisor/react';
 
 const ff = createInstance({
-  datafileUrl: process.env.NEXT_PUBLIC_FF_BUILD,
+  datafileUrl: process.env.NEXT_PUBLIC_FF_LIVE,
   // stickyFeatures: {
   //     exampleProdTesting: {
   //         enabled: true
