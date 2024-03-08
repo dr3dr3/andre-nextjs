@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = ''
-
+// const isGithubActions = process.env.GITHUB_ACTIONS || false
+// let assetPrefix = ''
+// let basePath = ''
 // if (isGithubActions) {
 //   // trim off `<owner>/`
 //   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
@@ -13,8 +11,14 @@ let basePath = ''
 //   basePath = `/${repo}`
 // };
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+let output = undefined
+if (isGithubActions) {
+  output = 'export'
+};
+
 const nextConfig = {
-    output: 'export',
+    output: output,
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     trailingSlash: true,
     // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
@@ -25,8 +29,12 @@ const nextConfig = {
         loader: 'akamai',
         path: '',
     },
-    assetPrefix: assetPrefix,
-    basePath: basePath,
+    // assetPrefix: assetPrefix,
+    // basePath: basePath,
+    // generateBuildId: async () => {
+    //   // This could be anything, using the latest git hash
+    //   return 'build'
+    // },
     experimental: {
       forceSwcTransforms: true,
     }

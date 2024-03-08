@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && touch out/_next/.nojekyll",
-    "start": "next start",
+    "build-local": "NODE_ENV=test next build",
+    "start": "npm run build-local && next start -p 3001",
     "test": "echo 'No testing setup'",
     "lint": "next lint",
     "format": "npx prettier app components lib style --check",
